@@ -34,16 +34,9 @@ dependencies {
     implementation "com.android.support:support-compat:${safeExtGet('supportLibVersion', '+')}"
     implementation "com.android.support:support-media-compat:${safeExtGet('supportLibVersion', '+')}"
 
-<<<<<<< HEAD
-    // implementation('com.google.android.exoplayer:extension-okhttp:2.9.0') {
+    // implementation('com.google.android.exoplayer:extension-okhttp:2.9.1') {
     //     exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     // }
-    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
-=======
-    implementation('com.google.android.exoplayer:extension-okhttp:2.9.1') {
-        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
-    }
     implementation 'com.squareup.okhttp3:okhttp:3.12.0'
->>>>>>> bd3d6d876ff9a77364bd39a6227c0bcd61b67eae
 
 }
