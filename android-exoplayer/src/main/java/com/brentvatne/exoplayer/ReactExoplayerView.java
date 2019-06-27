@@ -85,7 +85,9 @@ class ReactExoplayerView extends FrameLayout implements
 
     private static final String TAG = "ReactExoplayerView";
 
-    private static final DefaultBandwidthMeter BANDWIDTH_METER = new DefaultBandwidthMeter();
+    //Set initial bitrate as 0.2 Mbps
+    private static final DefaultBandwidthMeter BANDWIDTH_METER = new DefaultBandwidthMeter.Builder().setInitialBitrateEstimate(200000).build();
+    //private static final DefaultBandwidthMeter BANDWIDTH_METER = new DefaultBandwidthMeter();
     private static final CookieManager DEFAULT_COOKIE_MANAGER;
     private static final int SHOW_PROGRESS = 1;
     private static final int REPORT_BANDWIDTH = 1;
